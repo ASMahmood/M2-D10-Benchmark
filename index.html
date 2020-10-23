@@ -304,8 +304,8 @@
           </div>
           <div class="card">
             <img src="assets/title3.webp" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text position-relative">The Outer Worlds</p>
+            <div class="card-body position-relative">
+              <p class="card-text">The Outer Worlds</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="icons">
                   <i class="fab fa-windows mr-1"></i>
@@ -313,7 +313,8 @@
                 <div class="price">
                   <p class="price-new">Coming Soon</p>
                 </div>
-                <span class="badge badge-secondary position-absolute p-2"
+                <span
+                  class="badge badge-secondary position-absolute p-2 soonBadge"
                   ><i class="fas fa-calendar-alt pr-2"></i> SOON</span
                 >
               </div>
@@ -343,29 +344,514 @@
       </div>
     </div>
 
-    <div class="container-fluid ribbon mt-5">
+    <!--GALAXY RIBBON-->
+
+    <div class="container-fluid ribbon mt-4">
       <div class="container">
         <div class="row">
           <div class="col col-12 col-md-8">
             <p>
               We are GOG.com, the
-              <span style="color: #86328a">DRM-free</span> home for a
-              <span style="color: #86328a">curated selection</span> of games.
-              This place was
-              <span style="color: #86328a">made for gamers,</span> so make
-              yourself at home.
+              <span style="color: #86328a; font-weight: 600">DRM-free</span>
+              home for a
+              <span style="color: #86328a; font-weight: 600"
+                >curated selection</span
+              >
+              of games. This place was
+              <span style="color: #86328a; font-weight: 600"
+                >made for gamers,</span
+              >
+              so make yourself at home.
             </p>
           </div>
           <div
-            class="col col-12 col-md-4 d-flex justify-content-center align-items-center"
+            class="col col-12 col-md-4 d-flex justify-content-end align-items-center"
           >
             <span
               ><img
                 src="assets/galaxy-icon.png"
                 alt="galaxy-icon"
                 width="28px"
+                class="mr-2"
               />The new GOG GALAXY 2.0</span
             >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--VISA BANNER-->
+
+    <div class="container mt-4 position-relative" id="visa-banner">
+      <img
+        src="assets/visa-banner.jpg"
+        class="img-fluid d-none d-md-flex"
+        alt="visa-banenr"
+      />
+      <img
+        src="assets/visa-banner-small.jpg"
+        class="img-fluid d-flex d-md-none"
+        alt="smol visa banner"
+      />
+      <div
+        class="position-absolute d-flex align-items-center justify-content-between"
+      >
+        <div class="col-12 col-md-auto ml-md-3">
+          <h4>Get Children of Morta with Visa</h4>
+          <h6>More info and promo terms on www.gog.com/visa</h6>
+        </div>
+        <div class="col-12 col-md-auto d-flex justify-content-end mr-5">
+          <button class="btn btn-success">Check More</button>
+        </div>
+      </div>
+    </div>
+
+    <!--SALE COLLAPSE-->
+
+    <div class="container" id="sales">
+      <div class="row mt-4 align-items-center mb-3">
+        <i class="fas fa-certificate position-relative"></i>
+        <h6 class="ml-2 mr-4 my-0" style="font-weight: bold">Now on sale</h6>
+        <div
+          class="list-group list-group-horizontal"
+          id="list-tab"
+          role="tablist"
+        >
+          <a
+            class="list-group-item list-group-item-action active"
+            id="list-deals-list"
+            data-toggle="list"
+            href="#list-deals"
+            role="tab"
+            aria-controls="deals"
+            >Featured deals</a
+          >
+          <a
+            class="list-group-item list-group-item-action"
+            id="list-ADD-list"
+            data-toggle="list"
+            href="#list-ADD"
+            role="tab"
+            aria-controls=" DD"
+            >Aquanox Deep Descent</a
+          >
+          <a
+            class="list-group-item list-group-item-action"
+            id="list-sale-list"
+            data-toggle="list"
+            href="#list-sale"
+            role="tab"
+            aria-controls="sale"
+            >Weekly Sale</a
+          >
+          <a
+            class="list-group-item list-group-item-action"
+            id="list-SMB-list"
+            data-toggle="list"
+            href="#list-SMB"
+            role="tab"
+            aria-controls="SMB"
+            >Survivng Mars bundle</a
+          >
+          <a
+            class="list-group-item list-group-item-action"
+            id="list-more-list"
+            data-toggle="list"
+            href="#list-more"
+            role="tab"
+            aria-controls="more"
+            >More</a
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="tab-content" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="list-deals"
+            role="tabpanel"
+            aria-labelledby="list-deals-list"
+          >
+            <div
+              id="dealsCarouselIndicators"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#dealsCarouselIndicators"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li
+                  data-target="#dealsCarouselIndicators"
+                  data-slide-to="1"
+                ></li>
+                <li
+                  data-target="#dealsCarouselIndicators"
+                  data-slide-to="2"
+                ></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="container">
+                    <div
+                      class="row row-cols-4 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="col position-relative">
+                        <img
+                          src="assets/thingy1.jpg"
+                          alt="thingy1"
+                          class="img-fluid"
+                        />
+                        <div class="d-flex position-absolute"></div>
+                      </div>
+                      <div class="col position-relative">
+                        <img
+                          src="assets/thingy2.jpg"
+                          alt="thingy1"
+                          class="img-fluid"
+                        />
+                        <div class="d-flex position-absolute"></div>
+                      </div>
+                      <div class="col position-relative">
+                        <img
+                          src="assets/thingy3.jpg"
+                          alt="thingy1"
+                          class="img-fluid"
+                        />
+                        <div class="d-flex position-absolute"></div>
+                      </div>
+                      <div class="col position-relative">
+                        <img
+                          src="assets/thingy4.jpg"
+                          alt="thingy1"
+                          class="img-fluid"
+                        />
+                        <div class="d-flex position-absolute"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container">
+                    <div
+                      class="row row-cols-4 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="col position-relative">
+                        <img
+                          src="assets/thingy1.jpg"
+                          alt="thingy1"
+                          class="img-fluid"
+                        />
+                        <div class="d-flex position-absolute"></div>
+                      </div>
+                      <div class="col position-relative">
+                        <img
+                          src="assets/thingy2.jpg"
+                          alt="thingy1"
+                          class="img-fluid"
+                        />
+                        <div class="d-flex position-absolute"></div>
+                      </div>
+                      <div class="col position-relative">
+                        <img
+                          src="assets/thingy3.jpg"
+                          alt="thingy1"
+                          class="img-fluid"
+                        />
+                        <div class="d-flex position-absolute"></div>
+                      </div>
+                      <div class="col position-relative">
+                        <img
+                          src="assets/thingy4.jpg"
+                          alt="thingy1"
+                          class="img-fluid"
+                        />
+                        <div class="d-flex position-absolute"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container">
+                    <div
+                      class="row row-cols-4 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="col position-relative">
+                        <img
+                          src="assets/thingy1.jpg"
+                          alt="thingy1"
+                          class="img-fluid"
+                        />
+                        <div class="d-flex position-absolute"></div>
+                      </div>
+                      <div class="col position-relative">
+                        <img
+                          src="assets/thingy2.jpg"
+                          alt="thingy1"
+                          class="img-fluid"
+                        />
+                        <div class="d-flex position-absolute"></div>
+                      </div>
+                      <div class="col position-relative">
+                        <img
+                          src="assets/thingy3.jpg"
+                          alt="thingy1"
+                          class="img-fluid"
+                        />
+                        <div class="d-flex position-absolute"></div>
+                      </div>
+                      <div class="col position-relative">
+                        <img
+                          src="assets/thingy4.jpg"
+                          alt="thingy1"
+                          class="img-fluid"
+                        />
+                        <div class="d-flex position-absolute"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#dealsCarouselIndicators"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#dealsCarouselIndicators"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="list-profile"
+            role="tabpanel"
+            aria-labelledby="list-profile-list"
+          >
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Cupiditate, voluptate! Laborum deleniti modi fugit voluptate cum
+            earum officiis eveniet maxime! Totam quod dolorum laudantium, rerum
+            placeat magni facere amet illum consequuntur error laboriosam eum
+            aspernatur vitae quos accusantium nostrum quis veritatis alias
+            debitis, obcaecati distinctio fugit iure in? Ipsa architecto
+            obcaecati eligendi officia nemo similique illo voluptas eum saepe
+            expedita incidunt nihil impedit voluptate ullam nostrum error quod
+            ducimus excepturi animi, facere eveniet odio a omnis alias. Fugit
+            magni quos consequuntur dignissimos, dolorem iusto, exercitationem
+            placeat illum vel, expedita delectus quaerat recusandae reiciendis
+            necessitatibus? Voluptates autem suscipit vel sint asperiores!
+            Aliquam, qui earum expedita totam odio ex rem rerum aperiam error
+            possimus illo. Quo, neque. Enim deserunt, officia, illo totam ipsum
+            non unde tenetur quasi voluptatem soluta molestiae repellat labore
+            impedit repudiandae repellendus mollitia quos quidem eum quis.
+            Placeat unde suscipit delectus sint commodi fugiat explicabo
+            dignissimos! Ex dolorem illo, cupiditate quaerat corporis nobis
+            recusandae voluptatem ipsum, aliquam incidunt vero. Neque eum animi
+            blanditiis eos, facere fuga laborum doloribus quas debitis repellat
+            laudantium ex quis molestiae voluptate aut, ut aperiam id non
+            temporibus, perferendis libero voluptates! Repudiandae cumque quasi
+            id vitae odit fugit iure, obcaecati, officia cupiditate, possimus
+            aperiam! Nostrum aperiam labore eaque consequuntur quis fugit culpa
+            nihil vitae. Ipsa quisquam libero laborum officia. Architecto
+            deserunt ullam ab maiores minima ipsa labore temporibus atque.
+            Itaque numquam suscipit perspiciatis consequatur hic provident
+            temporibus, obcaecati quo a earum dolor sunt est sed dolores
+            tempora? Doloremque labore assumenda inventore, ullam tempore vel
+            doloribus animi, eius mollitia voluptatibus laborum iste omnis
+            dolores rerum ipsa quidem odio laboriosam. Pariatur voluptatum,
+            autem provident unde iure quae reprehenderit officia voluptas! Quos
+            eligendi at nemo temporibus debitis ad, id accusantium ipsam fuga
+            minus error fugiat neque facilis saepe eius quidem libero, maiores
+            ullam quia repellat! Obcaecati perferendis quaerat aspernatur minus
+            et animi reiciendis, ipsam laboriosam repellendus architecto
+            consequatur, optio magnam voluptatem odit veniam ab vitae corrupti
+            excepturi iusto doloremque ratione ea mollitia. Necessitatibus
+            soluta eius odit assumenda temporibus tempora saepe placeat. Quos
+            maiores illo, adipisci quisquam cupiditate possimus. Animi pariatur
+            distinctio reprehenderit architecto perspiciatis doloribus enim
+            consequuntur expedita cupiditate illum alias perferendis incidunt
+            amet minima, ipsa et laudantium porro maxime repellat facere itaque
+            esse! Error, nam nisi ad quia voluptatibus repellat impedit ipsam
+            eius vero dolores qui sed alias distinctio ipsum, iste totam
+            asperiores, quidem repudiandae unde quae ex tenetur? Consequatur
+            commodi debitis nihil unde labore odio, sapiente necessitatibus
+            accusamus distinctio laboriosam minima nostrum sequi, aperiam animi
+            natus ratione temporibus, amet deserunt ut? Molestias dolorem ullam
+            architecto optio cumque sapiente repellendus voluptatem distinctio
+            veniam. Rerum qui exercitationem ab labore, dolorum nulla, molestiae
+            nobis placeat sunt quis distinctio at! Magnam soluta laborum officia
+            alias omnis assumenda ea mollitia esse, molestias quos cumque ab
+            beatae quod suscipit et eum? Accusamus dolorem dolores obcaecati
+            autem numquam praesentium minima esse saepe eius magnam non deserunt
+            cupiditate quam alias illo aliquid hic iure, vero omnis dolorum sit.
+            Veritatis et tempore officia atque? Recusandae nostrum, illo nihil
+            ducimus excepturi voluptatum non optio quidem animi est maiores ut
+            dignissimos, quas praesentium modi suscipit totam dicta et unde enim
+            a. Neque alias voluptas repudiandae voluptates vero, voluptate non
+            culpa corporis officiis beatae libero impedit! Quos iure a sapiente
+            accusamus molestias! Delectus impedit laudantium aut esse est
+            consequatur optio. Quidem totam ab praesentium distinctio nisi
+            possimus. Dolorem.
+          </div>
+          <div
+            class="tab-pane fade"
+            id="list-messages"
+            role="tabpanel"
+            aria-labelledby="list-messages-list"
+          >
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Cupiditate, voluptate! Laborum deleniti modi fugit voluptate cum
+            earum officiis eveniet maxime! Totam quod dolorum laudantium, rerum
+            placeat magni facere amet illum consequuntur error laboriosam eum
+            aspernatur vitae quos accusantium nostrum quis veritatis alias
+            debitis, obcaecati distinctio fugit iure in? Ipsa architecto
+            obcaecati eligendi officia nemo similique illo voluptas eum saepe
+            expedita incidunt nihil impedit voluptate ullam nostrum error quod
+            ducimus excepturi animi, facere eveniet odio a omnis alias. Fugit
+            magni quos consequuntur dignissimos, dolorem iusto, exercitationem
+            placeat illum vel, expedita delectus quaerat recusandae reiciendis
+            necessitatibus? Voluptates autem suscipit vel sint asperiores!
+            Aliquam, qui earum expedita totam odio ex rem rerum aperiam error
+            possimus illo. Quo, neque. Enim deserunt, officia, illo totam ipsum
+            non unde tenetur quasi voluptatem soluta molestiae repellat labore
+            impedit repudiandae repellendus mollitia quos quidem eum quis.
+            Placeat unde suscipit delectus sint commodi fugiat explicabo
+            dignissimos! Ex dolorem illo, cupiditate quaerat corporis nobis
+            recusandae voluptatem ipsum, aliquam incidunt vero. Neque eum animi
+            blanditiis eos, facere fuga laborum doloribus quas debitis repellat
+            laudantium ex quis molestiae voluptate aut, ut aperiam id non
+            temporibus, perferendis libero voluptates! Repudiandae cumque quasi
+            id vitae odit fugit iure, obcaecati, officia cupiditate, possimus
+            aperiam! Nostrum aperiam labore eaque consequuntur quis fugit culpa
+            nihil vitae. Ipsa quisquam libero laborum officia. Architecto
+            deserunt ullam ab maiores minima ipsa labore temporibus atque.
+            Itaque numquam suscipit perspiciatis consequatur hic provident
+            temporibus, obcaecati quo a earum dolor sunt est sed dolores
+            tempora? Doloremque labore assumenda inventore, ullam tempore vel
+            doloribus animi, eius mollitia voluptatibus laborum iste omnis
+            dolores rerum ipsa quidem odio laboriosam. Pariatur voluptatum,
+            autem provident unde iure quae reprehenderit officia voluptas! Quos
+            eligendi at nemo temporibus debitis ad, id accusantium ipsam fuga
+            minus error fugiat neque facilis saepe eius quidem libero, maiores
+            ullam quia repellat! Obcaecati perferendis quaerat aspernatur minus
+            et animi reiciendis, ipsam laboriosam repellendus architecto
+            consequatur, optio magnam voluptatem odit veniam ab vitae corrupti
+            excepturi iusto doloremque ratione ea mollitia. Necessitatibus
+            soluta eius odit assumenda temporibus tempora saepe placeat. Quos
+            maiores illo, adipisci quisquam cupiditate possimus. Animi pariatur
+            distinctio reprehenderit architecto perspiciatis doloribus enim
+            consequuntur expedita cupiditate illum alias perferendis incidunt
+            amet minima, ipsa et laudantium porro maxime repellat facere itaque
+            esse! Error, nam nisi ad quia voluptatibus repellat impedit ipsam
+            eius vero dolores qui sed alias distinctio ipsum, iste totam
+            asperiores, quidem repudiandae unde quae ex tenetur? Consequatur
+            commodi debitis nihil unde labore odio, sapiente necessitatibus
+            accusamus distinctio laboriosam minima nostrum sequi, aperiam animi
+            natus ratione temporibus, amet deserunt ut? Molestias dolorem ullam
+            architecto optio cumque sapiente repellendus voluptatem distinctio
+            veniam. Rerum qui exercitationem ab labore, dolorum nulla, molestiae
+            nobis placeat sunt quis distinctio at! Magnam soluta laborum officia
+            alias omnis assumenda ea mollitia esse, molestias quos cumque ab
+            beatae quod suscipit et eum? Accusamus dolorem dolores obcaecati
+            autem numquam praesentium minima esse saepe eius magnam non deserunt
+            cupiditate quam alias illo aliquid hic iure, vero omnis dolorum sit.
+            Veritatis et tempore officia atque? Recusandae nostrum, illo nihil
+            ducimus excepturi voluptatum non optio quidem animi est maiores ut
+            dignissimos, quas praesentium modi suscipit totam dicta et unde enim
+            a. Neque alias voluptas repudiandae voluptates vero, voluptate non
+            culpa corporis officiis beatae libero impedit! Quos iure a sapiente
+            accusamus molestias! Delectus impedit laudantium aut esse est
+            consequatur optio. Quidem totam ab praesentium distinctio nisi
+            possimus. Dolorem.
+          </div>
+          <div
+            class="tab-pane fade"
+            id="list-settings"
+            role="tabpanel"
+            aria-labelledby="list-settings-list"
+          >
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Cupiditate, voluptate! Laborum deleniti modi fugit voluptate cum
+            earum officiis eveniet maxime! Totam quod dolorum laudantium, rerum
+            placeat magni facere amet illum consequuntur error laboriosam eum
+            aspernatur vitae quos accusantium nostrum quis veritatis alias
+            debitis, obcaecati distinctio fugit iure in? Ipsa architecto
+            obcaecati eligendi officia nemo similique illo voluptas eum saepe
+            expedita incidunt nihil impedit voluptate ullam nostrum error quod
+            ducimus excepturi animi, facere eveniet odio a omnis alias. Fugit
+            magni quos consequuntur dignissimos, dolorem iusto, exercitationem
+            placeat illum vel, expedita delectus quaerat recusandae reiciendis
+            necessitatibus? Voluptates autem suscipit vel sint asperiores!
+            Aliquam, qui earum expedita totam odio ex rem rerum aperiam error
+            possimus illo. Quo, neque. Enim deserunt, officia, illo totam ipsum
+            non unde tenetur quasi voluptatem soluta molestiae repellat labore
+            impedit repudiandae repellendus mollitia quos quidem eum quis.
+            Placeat unde suscipit delectus sint commodi fugiat explicabo
+            dignissimos! Ex dolorem illo, cupiditate quaerat corporis nobis
+            recusandae voluptatem ipsum, aliquam incidunt vero. Neque eum animi
+            blanditiis eos, facere fuga laborum doloribus quas debitis repellat
+            laudantium ex quis molestiae voluptate aut, ut aperiam id non
+            temporibus, perferendis libero voluptates! Repudiandae cumque quasi
+            id vitae odit fugit iure, obcaecati, officia cupiditate, possimus
+            aperiam! Nostrum aperiam labore eaque consequuntur quis fugit culpa
+            nihil vitae. Ipsa quisquam libero laborum officia. Architecto
+            deserunt ullam ab maiores minima ipsa labore temporibus atque.
+            Itaque numquam suscipit perspiciatis consequatur hic provident
+            temporibus, obcaecati quo a earum dolor sunt est sed dolores
+            tempora? Doloremque labore assumenda inventore, ullam tempore vel
+            doloribus animi, eius mollitia voluptatibus laborum iste omnis
+            dolores rerum ipsa quidem odio laboriosam. Pariatur voluptatum,
+            autem provident unde iure quae reprehenderit officia voluptas! Quos
+            eligendi at nemo temporibus debitis ad, id accusantium ipsam fuga
+            minus error fugiat neque facilis saepe eius quidem libero, maiores
+            ullam quia repellat! Obcaecati perferendis quaerat aspernatur minus
+            et animi reiciendis, ipsam laboriosam repellendus architecto
+            consequatur, optio magnam voluptatem odit veniam ab vitae corrupti
+            excepturi iusto doloremque ratione ea mollitia. Necessitatibus
+            soluta eius odit assumenda temporibus tempora saepe placeat. Quos
+            maiores illo, adipisci quisquam cupiditate possimus. Animi pariatur
+            distinctio reprehenderit architecto perspiciatis doloribus enim
+            consequuntur expedita cupiditate illum alias perferendis incidunt
+            amet minima, ipsa et laudantium porro maxime repellat facere itaque
+            esse! Error, nam nisi ad quia voluptatibus repellat impedit ipsam
+            eius vero dolores qui sed alias distinctio ipsum, iste totam
+            asperiores, quidem repudiandae unde quae ex tenetur? Consequatur
+            commodi debitis nihil unde labore odio, sapiente necessitatibus
+            accusamus distinctio laboriosam minima nostrum sequi, aperiam animi
+            natus ratione temporibus, amet deserunt ut? Molestias dolorem ullam
+            architecto optio cumque sapiente repellendus voluptatem distinctio
+            veniam. Rerum qui exercitationem ab labore, dolorum nulla, molestiae
+            nobis placeat sunt quis distinctio at! Magnam soluta laborum officia
+            alias omnis assumenda ea mollitia esse, molestias quos cumque ab
+            beatae quod suscipit et eum? Accusamus dolorem dolores obcaecati
+            autem numquam praesentium minima esse saepe eius magnam non deserunt
+            cupiditate quam alias illo aliquid hic iure, vero omnis dolorum sit.
+            Veritatis et tempore officia atque? Recusandae nostrum, illo nihil
+            ducimus excepturi voluptatum non optio quidem animi est maiores ut
+            dignissimos, quas praesentium modi suscipit totam dicta et unde enim
+            a. Neque alias voluptas repudiandae voluptates vero, voluptate non
+            culpa corporis officiis beatae libero impedit! Quos iure a sapiente
+            accusamus molestias! Delectus impedit laudantium aut esse est
+            consequatur optio. Quidem totam ab praesentium distinctio nisi
+            possimus. Dolorem.
           </div>
         </div>
       </div>

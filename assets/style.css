@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 
-.body {
+body {
   font-family: "Lato", sans-serif;
   background-color: #d8d8d8;
 }
@@ -76,7 +76,7 @@
 .carousel-control-prev-icon {
   position: absolute;
   width: 40px;
-  padding: 10px;
+  padding: 0px;
   height: 40px;
   left: -50px;
   background-color: grey;
@@ -128,8 +128,8 @@
   color: #999999;
 }
 
-.card-body .badge {
-  top: 50%;
+.card-body .soonBadge {
+  top: -15%;
   left: 0px;
   background-color: #094a77;
   color: white;
@@ -165,7 +165,88 @@
 .ribbon p {
   font-size: 14px;
   font-family: "Lato", sans-serif;
-  line-height: 30px;
+  line-height: 25px;
   padding: 15px 0px;
   margin-bottom: 0;
+}
+
+.ribbon .col-md-4 span {
+  color: #86328a;
+  font-weight: 600;
+  border-left: 1px rgba(64, 64, 64, 0.4) solid;
+  padding-left: 50px;
+}
+
+#visa-banner > div {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+
+#visa-banner button {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 8px 10px rgba(255, 255, 255, 0.2);
+  border: 1px white solid;
+}
+
+#visa-banner:hover button {
+  background-color: lime;
+  box-shadow: 0px 0px 8px 10px rgba(0, 0, 0, 0.2);
+  border: 1px lime solid;
+}
+
+.fa-certificate::after {
+  content: "%";
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  background-color: none;
+  color: white;
+  font-size: 8px;
+  z-index: 2;
+}
+
+#sales .list-group-item {
+  padding: 0px;
+  margin-right: 1rem;
+  width: auto;
+  border: none;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  color: #595959;
+  background-color: #d8d8d8;
+}
+
+#sales .list-group-item:hover {
+  color: #78387b;
+  background-color: #d8d8d8;
+}
+
+#sales .carousel-inner img {
+  max-width: 256px;
+}
+
+#sales .carousel-inner img + div {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-width: 256px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 1200px) {
+  .card,
+  .price .price-new,
+  .price .badge {
+    font-size: 12px;
+  }
+  .price .price-old {
+    font-size: 8px;
+  }
 }
