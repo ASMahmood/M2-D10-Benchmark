@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+.body {
+  font-family: "Lato", sans-serif;
+  background-color: #d8d8d8;
+}
+
+.navBG {
+  background-color: rgba(44, 44, 44, 0.9);
+  color: rgba(255, 255, 255, 0.5);
+  position: sticky;
+}
+
+.navBG::before {
+  position: relative;
+  content: "";
+  background-image: url("navBG.jpg");
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50vh;
+  width: 50vw;
+  z-index: 2;
+}
+
+.navBG a {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+}
+
+.navBG a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.navBG li:last-child > a {
+  color: #af81b3;
+}
+
+.navBG li:last-child > a:hover {
+  color: #f2aef8;
+}
+
+.navBG li {
+  padding-right: 20px;
+}
+
+.fa-shopping-cart::before,
+.fa-search::before {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.fa-shopping-cart:hover::before,
+.fa-search::before:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.fa-shopping-cart::after {
+  content: "0";
+  padding-left: 2px;
+  font-size: 12px;
+  font-family: "Lato", sans-serif;
+  align-self: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-item img {
+  width: 800px;
+  height: 396px;
+}
+
+.carousel-control-prev-icon {
+  position: absolute;
+  width: 40px;
+  padding: 10px;
+  height: 40px;
+  left: -50px;
+  background-color: grey;
+  border: 5px lightgray solid;
+  border-radius: 50%;
+}
+
+.carousel-control-next-icon {
+  position: absolute;
+  width: 40px;
+  padding: 10px;
+  height: 40px;
+  right: -50px;
+  background-color: grey;
+  border: 5px lightgray solid;
+  border-radius: 50%;
+}
+
+.carouselBG {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 4%,
+    rgba(255, 255, 255, 0) 44%
+  );
+}
+
+.carousel-item .row {
+  display: inline-flex;
+}
