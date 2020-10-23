@@ -23,8 +23,10 @@
     <title>GOG.com</title>
   </head>
   <body>
-    <div class="container-fluid navBG">
-      <div class="container">
+    <!-- NAVBAR-->
+
+    <div class="container-fluid navBG sticky-top">
+      <div class="container position-relative">
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand pr-3" href="#"
             ><img src="assets/icon.png" alt="icon" class="py-0" width="35px"
@@ -151,6 +153,9 @@
         </nav>
       </div>
     </div>
+
+    <!-- CAROUSEL-->
+
     <div class="container main-carousel mt-5">
       <div class="row align-items-center">
         <i class="fas fa-highlighter"></i>
@@ -252,49 +257,115 @@
         </a>
       </div>
     </div>
+
+    <!-- 1ST ROW OF CARDS-->
+
     <div class="container mt-5" id="cards1">
       <div class="row">
         <div class="card-deck">
           <div class="card">
-            <img src="..." class="card-img-top" alt="..." />
+            <img src="assets/title1.webp" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
+              <p class="card-text">GONNER2</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="icons">
+                  <i class="fab fa-windows mr-1"></i>
+                  <i class="fab fa-apple mr-1"></i>
+                  <i class="fab fa-linux"></i>
+                </div>
+                <div class="price d-flex">
+                  <span class="badge badge-secondary mr-2">-10%</span>
+                  <div class="d-flex flex-column justify-content-end">
+                    <p class="price-old">£ 9.99</p>
+                    <p class="price-new">£ 8.99</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="card">
-            <img src="..." class="card-img-top" alt="..." />
+            <img src="assets/title2.webp" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This card has supporting text below as a natural lead-in to
-                additional content.
-              </p>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
+              <p class="card-text">Crossroads Inn Anniversary Edition</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="icons">
+                  <i class="fab fa-windows mr-1"></i>
+                  <i class="fab fa-apple mr-1"></i>
+                </div>
+                <div class="price d-flex">
+                  <span class="badge badge-secondary mr-2">-10%</span>
+                  <div class="d-flex flex-column justify-content-end">
+                    <p class="price-old">£ 19.49</p>
+                    <p class="price-new">£ 17.59</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="card">
-            <img src="..." class="card-img-top" alt="..." />
+            <img src="assets/title3.webp" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content
-                than the first to show that equal height action.
-              </p>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
+              <p class="card-text position-relative">The Outer Worlds</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="icons">
+                  <i class="fab fa-windows mr-1"></i>
+                </div>
+                <div class="price">
+                  <p class="price-new">Coming Soon</p>
+                </div>
+                <span class="badge badge-secondary position-absolute p-2"
+                  ><i class="fas fa-calendar-alt pr-2"></i> SOON</span
+                >
+              </div>
             </div>
+          </div>
+          <div class="card">
+            <img src="assets/title4.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">ScourgeBringer</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="icons">
+                  <i class="fab fa-windows mr-1"></i>
+                  <i class="fab fa-apple mr-1"></i>
+                  <i class="fab fa-linux"></i>
+                </div>
+                <div class="price d-flex">
+                  <span class="badge badge-secondary mr-2">-15%</span>
+                  <div class="d-flex flex-column justify-content-end">
+                    <p class="price-old">£ 13.49</p>
+                    <p class="price-new">£ 11.49</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid ribbon mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col col-12 col-md-8">
+            <p>
+              We are GOG.com, the
+              <span style="color: #86328a">DRM-free</span> home for a
+              <span style="color: #86328a">curated selection</span> of games.
+              This place was
+              <span style="color: #86328a">made for gamers,</span> so make
+              yourself at home.
+            </p>
+          </div>
+          <div
+            class="col col-12 col-md-4 d-flex justify-content-center align-items-center"
+          >
+            <span
+              ><img
+                src="assets/galaxy-icon.png"
+                alt="galaxy-icon"
+                width="28px"
+              />The new GOG GALAXY 2.0</span
+            >
           </div>
         </div>
       </div>
